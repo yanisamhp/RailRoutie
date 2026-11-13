@@ -1,0 +1,27 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local caches
+.cache/
+**/.cache/
+.streamlit/secrets.toml
+.env
+.env.*
+!.env.example
+
+# Local files and backups
+.DS_Store
+*.bak
+*.backup
+*.before_*
+*~
+requirements.before_cloud.txt
+
+# IDE
+.vscode/
+.idea/

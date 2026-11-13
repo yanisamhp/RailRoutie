@@ -1,0 +1,8 @@
+﻿context,status,notes
+adult_single_journey,IMPLEMENTED_11_OF_11,7044 exact prices
+student_senior,IMPLEMENTED_VERIFIED_PRODUCTS,Rabbit SRT currentEMV senior token
+child,VERIFIED_SUBSETS_PLUS_LABELLED_ESTIMATE,Existing verified subsets unchanged; odd-baht Red child half fares now PENDING_REVIEW estimates with .50 retained
+passes,IMPLEMENTED_VERIFIED_SUBSETS,SRT30T30D + BTS19catalogrows; read ITEM5_REVIEW_TH.md
+daily_cap,IMPLEMENTED_VERIFIED_SCOPE,PurpleRed and BluePurple split; unknown stacked rebates blocked
+ARL_SmartPass,UNVERIFIED_CURRENT_CONCESSIONS,No historical promotion extrapolation
+Red_EMV_transfer,PENDING_REVIEW,Current exact direction/card amount missing

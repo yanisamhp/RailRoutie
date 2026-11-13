@@ -1,0 +1,20 @@
+﻿product_id,passenger_type,kind,trip_count,valid_days,activation_days,price_thb,sale_from,sale_to,source_id,notes
+BTS_XTREME_LONG_10T_7D,adult,LONG,10,7,7,340,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Existing activated pass; pure quote; sale does not guarantee availability
+BTS_XTREME_LONG_10T_7D,student,LONG,10,7,7,270,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Existing activated pass; pure quote; sale does not guarantee availability
+BTS_XTREME_LONG_35T_30D,adult,LONG,35,30,30,1190,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Existing activated pass; pure quote; sale does not guarantee availability
+BTS_XTREME_LONG_35T_30D,student,LONG,35,30,30,945,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Existing activated pass; pure quote; sale does not guarantee availability
+BTS_XTREME_LONG_25T_30D,adult,LONG,25,30,30,900,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Existing activated pass; pure quote; sale does not guarantee availability
+BTS_XTREME_LONG_25T_30D,student,LONG,25,30,30,725,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Existing activated pass; pure quote; sale does not guarantee availability
+BTS_XTREME_LONG_15T_30D,adult,LONG,15,30,30,570,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Existing activated pass; pure quote; sale does not guarantee availability
+BTS_XTREME_LONG_15T_30D,student,LONG,15,30,30,465,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Existing activated pass; pure quote; sale does not guarantee availability
+BTS_XTREME_LONG_10T_60D,adult,LONG,10,60,30,400,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Existing activated pass; pure quote; sale does not guarantee availability
+BTS_XTREME_LONG_10T_60D,student,LONG,10,60,30,320,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Existing activated pass; pure quote; sale does not guarantee availability
+BTS_XTREME_SHORT_10T_7D,adult,SHORT,10,7,7,250,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Linked wallet/LINE Pay and Rewards required; core journey up to4 RIDE edges
+BTS_XTREME_SHORT_10T_7D,student,SHORT,10,7,7,250,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Linked wallet/LINE Pay and Rewards required; core journey up to4 RIDE edges
+BTS_XTREME_SHORT_35T_30D,adult,SHORT,35,30,30,875,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Linked wallet/LINE Pay and Rewards required; core journey up to4 RIDE edges
+BTS_XTREME_SHORT_35T_30D,student,SHORT,35,30,30,875,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Linked wallet/LINE Pay and Rewards required; core journey up to4 RIDE edges
+BTS_XTREME_SHORT_25T_30D,adult,SHORT,25,30,30,650,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Linked wallet/LINE Pay and Rewards required; core journey up to4 RIDE edges
+BTS_XTREME_SHORT_25T_30D,student,SHORT,25,30,30,650,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Linked wallet/LINE Pay and Rewards required; core journey up to4 RIDE edges
+BTS_XTREME_SHORT_15T_30D,adult,SHORT,15,30,30,405,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Linked wallet/LINE Pay and Rewards required; core journey up to4 RIDE edges
+BTS_XTREME_SHORT_15T_30D,student,SHORT,15,30,30,405,2026-04-01,2027-03-31,SRC_V5_BTS_PASSES,Linked wallet/LINE Pay and Rewards required; core journey up to4 RIDE edges
+BTS_BBL_10T_30D,adult,LONG,10,30,30,290,2026-03-01,2027-02-28,SRC_V5_BTS_BBL,Already purchased and loaded entitlement only. BBLRABBIT; monthly5833 campaign24000quota; cannot assert quota availability

@@ -1,0 +1,12 @@
+﻿line_id,name_en,name_th,operator,color_name_en,color_name_th,color_hex,station_count,branch_from,metadata_status,source_dataset
+ARL,Airport Rail Link (ARL),แอร์พอร์ตเรลลิงก์,ARL (SRT Electrified Train),Red (City Line),แดง,#C8102E,8,,PROVISIONAL,AI_DRAFT
+BTS-GLD,BTS Gold Line,สายสีทอง,BTS,Gold,ทอง,#C9A227,3,,PROVISIONAL,AI_DRAFT
+BTS-SIL,BTS Silom Line,สายสีลม,BTS,Dark Green,เขียวเข้ม,#00704A,14,,PROVISIONAL,AI_DRAFT
+BTS-SUK,BTS Sukhumvit Line,สายสุขุมวิท,BTS,Light Green,เขียวอ่อน,#8CC63F,47,,PROVISIONAL,AI_DRAFT
+MRT-BLU,MRT Blue Line,สายสีน้ำเงิน,MRT (BEM),Blue,น้ำเงิน,#1F4E9C,38,,PROVISIONAL,AI_DRAFT
+MRT-PNK,MRT Pink Line (main: PK01-PK30),สายสีชมพู (สายหลัก),MRT (monorail),Pink,ชมพู,#E4608F,30,,PROVISIONAL,AI_DRAFT
+MRT-PNK-MT,MRT Pink Line - Muang Thong Thani branch,สายสีชมพู ช่วงแยกเมืองทองธานี,MRT (monorail),Pink,ชมพู,#E4608F,2,MRT-PNK @ PK10,PROVISIONAL,AI_DRAFT
+MRT-PPL,MRT Purple Line,สายสีม่วง,MRT (BEM),Purple,ม่วง,#7F3F98,16,,PROVISIONAL,AI_DRAFT
+MRT-YLW,MRT Yellow Line,สายสีเหลือง,MRT (monorail),Yellow,เหลือง,#FFD200,23,,PROVISIONAL,AI_DRAFT
+SRT-DRD,SRT Dark Red Line,สายสีแดงเข้ม,SRT,Dark Red,แดงเข้ม,#8B1A1A,10,,PROVISIONAL,AI_DRAFT
+SRT-LRD,SRT Light Red Line,สายสีแดงอ่อน,SRT,Light Red,แดงอ่อน,#D2232A,4,,PROVISIONAL,AI_DRAFT

@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "records": {
+    "stations_coordinates_provisional": 195,
+    "lines_master": 11,
+    "ride_edges_master": 184,
+    "interchanges_master": 21
+  },
+  "edge_types": {
+    "RIDE": 184,
+    "TRANSFER": 20,
+    "BRANCH_JUNCTION": 1
+  },
+  "fare_rows": 7044,
+  "context_rows": 22816,
+  "transfer_rules": 21,
+  "pass_product_rows": 19,
+  "line_ids": [
+    "ARL",
+    "BTS-GLD",
+    "BTS-SIL",
+    "BTS-SUK",
+    "MRT-BLU",
+    "MRT-PNK",
+    "MRT-PNK-MT",
+    "MRT-PPL",
+    "MRT-YLW",
+    "SRT-DRD",
+    "SRT-LRD"
+  ],
+  "schemas": {
+    "stations_coordinates_provisional": [
+      "station_id",
+      "station_line_id",
+      "line_id",
+      "station_code",
+      "seq",
+      "name_en",
+      "name_th",
+      "operator",
+      "latitude",
+      "longitude",
+      "drt_name_en",
+      "drt_name_th",
+      "coordinate_status",
+      "coordinate_source",
+      "identity_status",
+      "route_sequence_status",
+      "coordinate_origin",
+      "coordinate_qa_status",
+      "osm_reference_id",
+      "osm_reference_url",
+      "osm_distance_m"
+    ],
+    "lines_master": [
+      "line_id",
+      "name_en",
+      "name_th",
+      "operator",
+      "color_name_en",
+      "color_name_th",
+      "color_hex",
+      "station_count",
+      "branch_from",
+      "metadata_status",
+      "source_dataset"
+    ],
+    "ride_edges_master": [
+      "edge_id",
+      "line_id",
+      "source_station_line_id",
+      "target_station_line_id",
+      "edge_type",
+      "stops",
+      "routing_status",
+      "source_dataset"
+    ],
+    "interchanges_master": [
+      "station_a_line",
+      "station_a_name",
+      "station_b_line",
+      "station_b_name",
+      "walk_minutes",
+      "paid_area_transfer",
+      "note",
+      "station_a_line_code",
+      "station_b_line_code",
+      "station_line_id_a",
+      "station_line_id_b",
+      "distance_m_from_file",
+      "transfer_type",
+      "condition_verified",
+      "source_note",
+      "connection_id",
+      "connection_category",
+      "routing_status",
+      "source_dataset"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "revision": "blue-topology-overlay-v1",
+  "source_id": "SRC_BEM_NETWORK_MAP",
+  "source_url": "https://metro.bemplc.co.th/MRT-System-Map",
+  "original_ride_csv_sha256": "006bcbbf9bd87f5d8918f4baf7110a4619ca5559f6e4afb38346d876275c335d",
+  "operations": [
+    {
+      "action": "REMOVE",
+      "from": "MRT-BLU:BL32",
+      "to": "MRT-BLU:BL33",
+      "type": "RIDE",
+      "line_id": "MRT-BLU",
+      "edge_id": "RIDE-100"
+    },
+    {
+      "action": "ADD",
+      "from": "MRT-BLU:BL32",
+      "to": "MRT-BLU:BL01",
+      "type": "RIDE",
+      "line_id": "MRT-BLU",
+      "edge_id": "DERIVED-BL32-BL01"
+    },
+    {
+      "action": "ADD",
+      "from": "MRT-BLU:BL01",
+      "to": "MRT-BLU:BL33",
+      "type": "RIDE",
+      "line_id": "MRT-BLU",
+      "edge_id": "DERIVED-BL01-BL33"
+    }
+  ]
+}

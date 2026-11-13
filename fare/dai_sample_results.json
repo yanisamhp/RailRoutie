@@ -1,0 +1,536 @@
+[
+  {
+    "case_id": "R1",
+    "route_status": "OK",
+    "fare_result": {
+      "route_id": "route_8cc87d0231",
+      "total_fare_thb": 45.0,
+      "fare_segments": [
+        {
+          "segment_id": 1,
+          "station_line_ids": [
+            "ARL:A1",
+            "ARL:A2",
+            "ARL:A3",
+            "ARL:A4",
+            "ARL:A5",
+            "ARL:A6",
+            "ARL:A7",
+            "ARL:A8"
+          ],
+          "from_station_line_id": "ARL:A1",
+          "to_station_line_id": "ARL:A8",
+          "fare_system": "ARL",
+          "fare_thb": 45.0,
+          "status": "OK",
+          "source_ids": [
+            "SRC_OTP_ARL_20261110"
+          ]
+        }
+      ],
+      "status": "OK",
+      "sources": [
+        {
+          "source_id": "SRC_OTP_ARL_20261110",
+          "publisher": "Office of Transport and Traffic Policy and Planning",
+          "url": "https://namtang-api.otp.go.th/opendata",
+          "source_type": "GOVERNMENT_GTFS",
+          "accessed_date": "2026-11-11",
+          "effective_from": "",
+          "verification_status": "ACTIVE",
+          "notes": "CC-BY4.0 Namtang GTFS feed_version20261110. Complete 56 directed ARL pairs; service feed dates are not fare effective dates.",
+          "source_name": "Namtang GTFS ARL fare_attributes and fare_rules",
+          "effective_to": "",
+          "passenger_type": "adult",
+          "ticket_type": "single_journey",
+          "discount_conditions": "",
+          "transfer_conditions": "",
+          "date_limitations": "",
+          "access_status": "DOWNLOADED_AND_JOINED",
+          "evidence_file": "evidence/ARL_GTFS_20261110.json",
+          "reviewed_on": "2026-11-11"
+        }
+      ],
+      "reasons": [],
+      "currency": "THB",
+      "travel_date": "2026-11-10",
+      "passenger_type": "adult",
+      "ticket_type": "single_journey",
+      "data_snapshot_date": "2026-11-10",
+      "network_revision": "blue-topology-overlay-v1",
+      "pricing_basis": "adult_single_journey_separate_tickets_except_verified_integrated_connections",
+      "fare_adjustments": []
+    }
+  },
+  {
+    "case_id": "R2",
+    "route_status": "OK",
+    "fare_result": {
+      "route_id": "route_4423f205a6",
+      "total_fare_thb": 46.0,
+      "fare_segments": [
+        {
+          "segment_id": 1,
+          "station_line_ids": [
+            "BTS-SUK:N8",
+            "BTS-SUK:N9"
+          ],
+          "from_station_line_id": "BTS-SUK:N8",
+          "to_station_line_id": "BTS-SUK:N9",
+          "fare_system": "BTS_GREEN",
+          "fare_thb": 17.0,
+          "status": "OK",
+          "source_ids": [
+            "SRC_BTS_SJC"
+          ]
+        },
+        {
+          "segment_id": 2,
+          "station_line_ids": [
+            "MRT-BLU:BL14",
+            "MRT-BLU:BL15",
+            "MRT-BLU:BL16",
+            "MRT-BLU:BL17",
+            "MRT-BLU:BL18",
+            "MRT-BLU:BL19",
+            "MRT-BLU:BL20"
+          ],
+          "from_station_line_id": "MRT-BLU:BL14",
+          "to_station_line_id": "MRT-BLU:BL20",
+          "fare_system": "MRT-BLU",
+          "fare_thb": 29.0,
+          "status": "OK",
+          "source_ids": [
+            "SRC_BLUE_2026"
+          ]
+        }
+      ],
+      "status": "OK",
+      "sources": [
+        {
+          "source_id": "SRC_BLUE_2026",
+          "publisher": "MRTA / operator",
+          "url": "https://www.mrta.co.th/storage/content/uploads/17830468128.png",
+          "source_type": "OFFICIAL_MATRIX",
+          "accessed_date": "2026-11-10",
+          "effective_from": "",
+          "verification_status": "ACTIVE",
+          "notes": "Adult chart; fare derived from official station-count tariff plus actual Blue loop/spur topology, not from defective Master adjacency. Source image reviewed.",
+          "source_name": "SRC_BLUE_2026",
+          "effective_to": "",
+          "passenger_type": "adult",
+          "ticket_type": "single_journey",
+          "discount_conditions": "",
+          "transfer_conditions": "",
+          "date_limitations": "",
+          "access_status": "FETCHED_AND_REVIEWED",
+          "evidence_file": "evidence/mrta_0.png",
+          "reviewed_on": "2026-11-10"
+        },
+        {
+          "source_id": "SRC_BTS_SJC",
+          "publisher": "BTS",
+          "url": "https://www.bts.co.th/files/uploads/tickets/pdf/fare_matrix_Eff.1Nov25_SJC.pdf",
+          "source_type": "OPERATOR_MATRIX",
+          "accessed_date": "2026-11-05",
+          "effective_from": "2025-11-01",
+          "verification_status": "ACTIVE",
+          "notes": "All matrix rows independently re-extracted from fetched PDF; concession fares effective 2023-01-01; extension fares effective 2025-11-01. Engine conservatively starts combined table 2025-11-01.",
+          "source_name": "BTS Single Journey Card effective fare matrix",
+          "effective_to": "",
+          "passenger_type": "adult",
+          "ticket_type": "single_journey",
+          "discount_conditions": "Not applied; adult regular fare only",
+          "transfer_conditions": "Unknown unless explicitly listed in transfer_rules.csv",
+          "date_limitations": "Blank effective date/end date means unknown; verified_through is an audit limit, not an announced expiry",
+          "access_status": "FETCHED_NOT_AUTOMATICALLY_VERIFIED",
+          "evidence_file": "evidence/SRC_BTS_SJC.pdf",
+          "reviewed_on": "2026-11-10"
+        },
+        {
+          "source_id": "SRC_SEPARATE_TICKETS",
+          "publisher": "MRTA / operator",
+          "url": "https://www.mrta.co.th/th/fares",
+          "source_type": "OFFICIAL_MATRIX",
+          "accessed_date": "2026-11-10",
+          "effective_from": "",
+          "verification_status": "ACTIVE",
+          "notes": "Explicit independent-ticket quotation scenario: sum normal per-system single-journey tickets, no assumed cross-media rebate. NOT a statement that EMV/Rabbit have no discounts.",
+          "source_name": "SRC_SEPARATE_TICKETS",
+          "effective_to": "",
+          "passenger_type": "adult",
+          "ticket_type": "single_journey",
+          "discount_conditions": "",
+          "transfer_conditions": "",
+          "date_limitations": "",
+          "access_status": "FETCHED_AND_REVIEWED",
+          "evidence_file": "evidence/mrta.html",
+          "reviewed_on": "2026-11-10"
+        }
+      ],
+      "reasons": [],
+      "currency": "THB",
+      "travel_date": "2026-11-10",
+      "passenger_type": "adult",
+      "ticket_type": "single_journey",
+      "data_snapshot_date": "2026-11-10",
+      "network_revision": "blue-topology-overlay-v1",
+      "pricing_basis": "adult_single_journey_separate_tickets_except_verified_integrated_connections",
+      "fare_adjustments": []
+    }
+  },
+  {
+    "case_id": "R3",
+    "route_status": "OK",
+    "fare_result": {
+      "route_id": "route_46d8659d9b",
+      "total_fare_thb": 47.0,
+      "fare_segments": [
+        {
+          "segment_id": 1,
+          "station_line_ids": [
+            "BTS-SUK:E4",
+            "BTS-SUK:E3",
+            "BTS-SUK:E2",
+            "BTS-SUK:E1",
+            "BTS-SUK:CEN",
+            "BTS-SIL:CEN",
+            "BTS-SIL:S1",
+            "BTS-SIL:S2",
+            "BTS-SIL:S3",
+            "BTS-SIL:S4",
+            "BTS-SIL:S5",
+            "BTS-SIL:S6"
+          ],
+          "from_station_line_id": "BTS-SUK:E4",
+          "to_station_line_id": "BTS-SIL:S6",
+          "fare_system": "BTS_GREEN",
+          "fare_thb": 47.0,
+          "status": "OK",
+          "source_ids": [
+            "SRC_BTS_SJC"
+          ]
+        }
+      ],
+      "status": "OK",
+      "sources": [
+        {
+          "source_id": "SRC_BTS_SJC",
+          "publisher": "BTS",
+          "url": "https://www.bts.co.th/files/uploads/tickets/pdf/fare_matrix_Eff.1Nov25_SJC.pdf",
+          "source_type": "OPERATOR_MATRIX",
+          "accessed_date": "2026-11-05",
+          "effective_from": "2025-11-01",
+          "verification_status": "ACTIVE",
+          "notes": "All matrix rows independently re-extracted from fetched PDF; concession fares effective 2023-01-01; extension fares effective 2025-11-01. Engine conservatively starts combined table 2025-11-01.",
+          "source_name": "BTS Single Journey Card effective fare matrix",
+          "effective_to": "",
+          "passenger_type": "adult",
+          "ticket_type": "single_journey",
+          "discount_conditions": "Not applied; adult regular fare only",
+          "transfer_conditions": "Unknown unless explicitly listed in transfer_rules.csv",
+          "date_limitations": "Blank effective date/end date means unknown; verified_through is an audit limit, not an announced expiry",
+          "access_status": "FETCHED_NOT_AUTOMATICALLY_VERIFIED",
+          "evidence_file": "evidence/SRC_BTS_SJC.pdf",
+          "reviewed_on": "2026-11-10"
+        }
+      ],
+      "reasons": [],
+      "currency": "THB",
+      "travel_date": "2026-11-10",
+      "passenger_type": "adult",
+      "ticket_type": "single_journey",
+      "data_snapshot_date": "2026-11-10",
+      "network_revision": "blue-topology-overlay-v1",
+      "pricing_basis": "adult_single_journey_separate_tickets_except_verified_integrated_connections",
+      "fare_adjustments": []
+    }
+  },
+  {
+    "case_id": "R4",
+    "route_status": "OK",
+    "fare_result": {
+      "route_id": "route_0facb8ae99",
+      "total_fare_thb": 45.0,
+      "fare_segments": [
+        {
+          "segment_id": 1,
+          "station_line_ids": [
+            "MRT-PNK:PK01",
+            "MRT-PNK:PK02",
+            "MRT-PNK:PK03",
+            "MRT-PNK:PK04",
+            "MRT-PNK:PK05",
+            "MRT-PNK:PK06",
+            "MRT-PNK:PK07",
+            "MRT-PNK:PK08",
+            "MRT-PNK:PK09",
+            "MRT-PNK:PK10",
+            "MRT-PNK-MT:MT01",
+            "MRT-PNK-MT:MT02"
+          ],
+          "from_station_line_id": "MRT-PNK:PK01",
+          "to_station_line_id": "MRT-PNK-MT:MT02",
+          "fare_system": "MRT_PINK",
+          "fare_thb": 45.0,
+          "status": "OK",
+          "source_ids": [
+            "SRC_PINK_MATRIX"
+          ]
+        }
+      ],
+      "status": "OK",
+      "sources": [
+        {
+          "source_id": "SRC_PINK_MATRIX",
+          "publisher": "MRTA / operator",
+          "url": "https://www.nbm.co.th/cms-pk/WareHouse/RabbitCardPDF/1905250929232_fare_matrix_%E0%B8%8A%E0%B8%A1%E0%B8%9E%E0%B8%B9_SJT_Adult_Student_EFF.17June25.pdf",
+          "source_type": "OFFICIAL_MATRIX",
+          "accessed_date": "2026-11-10",
+          "effective_from": "",
+          "verification_status": "ACTIVE",
+          "notes": "Operator 32x32 matrix; includes PK01-PK30 and MT01-MT02. Transfer at PK10 continues same fare system.",
+          "source_name": "SRC_PINK_MATRIX",
+          "effective_to": "",
+          "passenger_type": "adult",
+          "ticket_type": "single_journey",
+          "discount_conditions": "",
+          "transfer_conditions": "",
+          "date_limitations": "",
+          "access_status": "FETCHED_AND_REVIEWED",
+          "evidence_file": "evidence/PINK_SJT_20250617.pdf",
+          "reviewed_on": "2026-11-10"
+        }
+      ],
+      "reasons": [],
+      "currency": "THB",
+      "travel_date": "2026-11-10",
+      "passenger_type": "adult",
+      "ticket_type": "single_journey",
+      "data_snapshot_date": "2026-11-10",
+      "network_revision": "blue-topology-overlay-v1",
+      "pricing_basis": "adult_single_journey_separate_tickets_except_verified_integrated_connections",
+      "fare_adjustments": []
+    }
+  },
+  {
+    "case_id": "R5",
+    "route_status": "OK",
+    "fare_result": {
+      "route_id": "route_2e5309a4c8",
+      "total_fare_thb": 79.0,
+      "fare_segments": [
+        {
+          "segment_id": 1,
+          "station_line_ids": [
+            "ARL:A1",
+            "ARL:A2",
+            "ARL:A3",
+            "ARL:A4",
+            "ARL:A5",
+            "ARL:A6"
+          ],
+          "from_station_line_id": "ARL:A1",
+          "to_station_line_id": "ARL:A6",
+          "fare_system": "ARL",
+          "fare_thb": 35.0,
+          "status": "OK",
+          "source_ids": [
+            "SRC_OTP_ARL_20261110"
+          ]
+        },
+        {
+          "segment_id": 2,
+          "station_line_ids": [
+            "MRT-BLU:BL21",
+            "MRT-BLU:BL20",
+            "MRT-BLU:BL19",
+            "MRT-BLU:BL18",
+            "MRT-BLU:BL17",
+            "MRT-BLU:BL16",
+            "MRT-BLU:BL15",
+            "MRT-BLU:BL14",
+            "MRT-BLU:BL13",
+            "MRT-BLU:BL12",
+            "MRT-BLU:BL11",
+            "MRT-BLU:BL10",
+            "MRT-BLU:BL09",
+            "MRT-BLU:BL08",
+            "MRT-BLU:BL07",
+            "MRT-BLU:BL06",
+            "MRT-BLU:BL05",
+            "MRT-BLU:BL04"
+          ],
+          "from_station_line_id": "MRT-BLU:BL21",
+          "to_station_line_id": "MRT-BLU:BL04",
+          "fare_system": "MRT-BLU",
+          "fare_thb": 44.0,
+          "status": "OK",
+          "source_ids": [
+            "SRC_BLUE_2026"
+          ]
+        }
+      ],
+      "status": "OK",
+      "sources": [
+        {
+          "source_id": "SRC_BLUE_2026",
+          "publisher": "MRTA / operator",
+          "url": "https://www.mrta.co.th/storage/content/uploads/17830468128.png",
+          "source_type": "OFFICIAL_MATRIX",
+          "accessed_date": "2026-11-10",
+          "effective_from": "",
+          "verification_status": "ACTIVE",
+          "notes": "Adult chart; fare derived from official station-count tariff plus actual Blue loop/spur topology, not from defective Master adjacency. Source image reviewed.",
+          "source_name": "SRC_BLUE_2026",
+          "effective_to": "",
+          "passenger_type": "adult",
+          "ticket_type": "single_journey",
+          "discount_conditions": "",
+          "transfer_conditions": "",
+          "date_limitations": "",
+          "access_status": "FETCHED_AND_REVIEWED",
+          "evidence_file": "evidence/mrta_0.png",
+          "reviewed_on": "2026-11-10"
+        },
+        {
+          "source_id": "SRC_OTP_ARL_20261110",
+          "publisher": "Office of Transport and Traffic Policy and Planning",
+          "url": "https://namtang-api.otp.go.th/opendata",
+          "source_type": "GOVERNMENT_GTFS",
+          "accessed_date": "2026-11-11",
+          "effective_from": "",
+          "verification_status": "ACTIVE",
+          "notes": "CC-BY4.0 Namtang GTFS feed_version20261110. Complete 56 directed ARL pairs; service feed dates are not fare effective dates.",
+          "source_name": "Namtang GTFS ARL fare_attributes and fare_rules",
+          "effective_to": "",
+          "passenger_type": "adult",
+          "ticket_type": "single_journey",
+          "discount_conditions": "",
+          "transfer_conditions": "",
+          "date_limitations": "",
+          "access_status": "DOWNLOADED_AND_JOINED",
+          "evidence_file": "evidence/ARL_GTFS_20261110.json",
+          "reviewed_on": "2026-11-11"
+        },
+        {
+          "source_id": "SRC_SEPARATE_TICKETS",
+          "publisher": "MRTA / operator",
+          "url": "https://www.mrta.co.th/th/fares",
+          "source_type": "OFFICIAL_MATRIX",
+          "accessed_date": "2026-11-10",
+          "effective_from": "",
+          "verification_status": "ACTIVE",
+          "notes": "Explicit independent-ticket quotation scenario: sum normal per-system single-journey tickets, no assumed cross-media rebate. NOT a statement that EMV/Rabbit have no discounts.",
+          "source_name": "SRC_SEPARATE_TICKETS",
+          "effective_to": "",
+          "passenger_type": "adult",
+          "ticket_type": "single_journey",
+          "discount_conditions": "",
+          "transfer_conditions": "",
+          "date_limitations": "",
+          "access_status": "FETCHED_AND_REVIEWED",
+          "evidence_file": "evidence/mrta.html",
+          "reviewed_on": "2026-11-10"
+        }
+      ],
+      "reasons": [],
+      "currency": "THB",
+      "travel_date": "2026-11-10",
+      "passenger_type": "adult",
+      "ticket_type": "single_journey",
+      "data_snapshot_date": "2026-11-10",
+      "network_revision": "blue-topology-overlay-v1",
+      "pricing_basis": "adult_single_journey_separate_tickets_except_verified_integrated_connections",
+      "fare_adjustments": []
+    }
+  },
+  {
+    "case_id": "E1",
+    "route_status": "SAME_STATION",
+    "fare_result": {
+      "route_id": "route_8bc355e0da",
+      "total_fare_thb": 0,
+      "fare_segments": [],
+      "status": "NO_TRAVEL",
+      "sources": [],
+      "reasons": [
+        "No ride requested; 0 is not an entry/exit gate fare"
+      ],
+      "currency": "THB",
+      "travel_date": "2026-11-10",
+      "passenger_type": "adult",
+      "ticket_type": "single_journey",
+      "data_snapshot_date": "2026-11-10",
+      "network_revision": "blue-topology-overlay-v1",
+      "pricing_basis": "adult_single_journey_separate_tickets_except_verified_integrated_connections",
+      "fare_adjustments": []
+    }
+  },
+  {
+    "case_id": "E2",
+    "route_status": "SAME_STATION",
+    "fare_result": {
+      "route_id": "route_9e5f3ef238",
+      "total_fare_thb": null,
+      "fare_segments": [],
+      "status": "FARE_DATA_UNAVAILABLE",
+      "sources": [
+        {
+          "source_id": "SRC_BTS_SJC",
+          "publisher": "BTS",
+          "url": "https://www.bts.co.th/files/uploads/tickets/pdf/fare_matrix_Eff.1Nov25_SJC.pdf",
+          "source_type": "OPERATOR_MATRIX",
+          "accessed_date": "2026-11-05",
+          "effective_from": "2025-11-01",
+          "verification_status": "ACTIVE",
+          "notes": "All matrix rows independently re-extracted from fetched PDF; concession fares effective 2023-01-01; extension fares effective 2025-11-01. Engine conservatively starts combined table 2025-11-01.",
+          "source_name": "BTS Single Journey Card effective fare matrix",
+          "effective_to": "",
+          "passenger_type": "adult",
+          "ticket_type": "single_journey",
+          "discount_conditions": "Not applied; adult regular fare only",
+          "transfer_conditions": "Unknown unless explicitly listed in transfer_rules.csv",
+          "date_limitations": "Blank effective date/end date means unknown; verified_through is an audit limit, not an announced expiry",
+          "access_status": "FETCHED_NOT_AUTOMATICALLY_VERIFIED",
+          "evidence_file": "evidence/SRC_BTS_SJC.pdf",
+          "reviewed_on": "2026-11-10"
+        }
+      ],
+      "reasons": [
+        "NO_PRICED_RIDE: transfer-only path is not a fare quote"
+      ],
+      "currency": "THB",
+      "travel_date": "2026-11-10",
+      "passenger_type": "adult",
+      "ticket_type": "single_journey",
+      "data_snapshot_date": "2026-11-10",
+      "network_revision": "blue-topology-overlay-v1",
+      "pricing_basis": "adult_single_journey_separate_tickets_except_verified_integrated_connections",
+      "fare_adjustments": []
+    }
+  },
+  {
+    "case_id": "E3",
+    "route_status": "UNKNOWN_STATION",
+    "fare_result": {
+      "route_id": null,
+      "total_fare_thb": null,
+      "fare_segments": [],
+      "status": "INVALID_ROUTE",
+      "sources": [],
+      "reasons": [
+        "Unknown station_line_id: XXX:99"
+      ],
+      "currency": "THB",
+      "travel_date": "2026-11-10",
+      "passenger_type": "adult",
+      "ticket_type": "single_journey",
+      "data_snapshot_date": "2026-11-10",
+      "network_revision": "blue-topology-overlay-v1",
+      "pricing_basis": "adult_single_journey_separate_tickets_except_verified_integrated_connections",
+      "fare_adjustments": [],
+      "route_status": "UNKNOWN_STATION"
+    }
+  }
+]
